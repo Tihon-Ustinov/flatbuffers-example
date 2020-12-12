@@ -1,0 +1,14 @@
+namespace ProductOffering;
+
+enum LifecycleStatus: byte {
+    Active = 0,
+    Project = 1
+}
+
+table Offer {
+  name: string;
+  version: string;
+  status: LifecycleStatus;
+}
+
+root_type Offer;
